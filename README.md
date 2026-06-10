@@ -30,7 +30,7 @@ To simulates Level 1 Help Desk ticketing workflows using ServiceNow ITSM. The go
 This lab will include simulated tickets for:
 
 1. Password reset / account lockout
-2. Wi-Fi connectivity issue -[INC000001 - Wi-Fi Connectivity Issue](documentation/INC000001%20-%20Wi-Fi%20Connectivity%20Issue.md)
+2. Wi-Fi connectivity issue -[INC000001 - Wi-Fi Connectivity Issue](./documentation/INC000001%20-%20Wi-Fi%20Connectivity%20Issue)
 3. Printer not responding
 4. Microsoft 365 login issue
 5. Laptop boot issue requiring escalation
