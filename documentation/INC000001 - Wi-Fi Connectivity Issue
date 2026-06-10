@@ -55,12 +55,15 @@ they notice the wifi adapter seemed to be showing and then disappearing in the d
 
 ## Resolution
 
-(To be completed)
+Evidence suggests that the wifi adapter is the cause of the connection issue due to the intermitted connection in device manager and the low wifi signal despite being close to a AP, 
+will need to set up a service ticket to have a tech go and verify in person and replace wifi adapter to restore connectivity.
 
 ## Related Incidents
 
-None
+None at this time
 
 ## Lessons Learned
 
-(To be completed)
+* Learned that a 169.254.x.x address can indicate a DHCP issue because Windows will self assign an address when it cannot retrieve one from a DHCP server.
+  This provides a useful troubleshooting indicator when investigating network connectivity issues
+
