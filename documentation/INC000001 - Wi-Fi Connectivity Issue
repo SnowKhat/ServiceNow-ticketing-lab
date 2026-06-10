@@ -19,7 +19,7 @@ after confirming no other users are experiencing issues i verified if  their wor
 
 1. I ask the user to verify that they are connected to corporates wifi eliminating the possibility of being connected to the wrong ssid or even having the wifi turned off in settings. 
 
-2. when i confirmed that they are connected correctly, I suggested to restart the workstation to fix any possible misconfiguration that may have been impacting the adapter.
+2. when i confirmed that they are connected correctly, I suggested to disconnect and reconnect as well as restart the workstation to fix any possible misconfiguration that may have been impacting the adapter.
 
 3. after the restart did not fix the issue i asked the user to click on the internet icon in the lower right of the screen to open the internet settings, 
 if so read to me if there are any errors showings in between the workstation and the internet display in the settings, user confirmed there is no error message showing. 
@@ -37,7 +37,21 @@ they notice the wifi adapter seemed to be showing and then disappearing in the d
 
 ## Solutions That Did Not Work
 
-(To be completed)
+
+* Restarting the workstation did not restore internet or intranet connectivity.
+
+* Verifying the user was connected to the correct corporate Wi-Fi network did not resolve the issue.
+
+* Disconnecting and reconnecting to the corporate Wi-Fi network did not restore connectivity.
+
+* Confirming the user's credentials on a separate workstation showed the account was functioning properly, but the issue remained on the affected workstation.
+
+* Reviewing the network settings did not reveal any visible connection errors.
+
+* Running ipconfig showed valid network addressing information, but the workstation still could not access internet or company resources.
+
+
+
 
 ## Resolution
 
