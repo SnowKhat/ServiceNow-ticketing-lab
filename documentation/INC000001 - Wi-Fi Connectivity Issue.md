@@ -14,20 +14,69 @@ User stated the connection was working normally during their previous shift.
 2. what is the user requesting to do and what are they unable to access, if this workstation is the only one having connectivity issues or are there others,
 after confirming no other users are experiencing issues i verified if  their workstation was working the last time they were logged in.
 
+
+## Troubleshooting Workflow
+
+```mermaid
+flowchart TD
+    A[User Reports No Internet Access] --> B[Verify User Identity]
+    B --> C[Confirm Business Impact]
+    C --> D[Check Scope of Issue]
+
+    D --> E{Only One Workstation Affected}
+
+    E -->|No| F[Escalate Possible Network Outage]
+    E -->|Yes| G[Verify Correct Corporate WiFi]
+
+    G --> H{Connected To Correct SSID}
+
+    H -->|No| I[Connect To Corporate WiFi]
+    H -->|Yes| J[Restart Workstation]
+
+    J --> K{Connectivity Restored}
+
+    K -->|Yes| L[Verify Internet And Intranet Access]
+    K -->|No| M[Check Network Settings]
+
+    M --> N{Network Error Displayed}
+
+    N -->|Yes| O[Document Error And Troubleshoot]
+    N -->|No| P[Test User Login On Another Workstation]
+
+    P --> Q{User Access Works Elsewhere}
+
+    Q -->|No| R[Investigate Account Or Access Issue]
+    Q -->|Yes| S[Run Ipconfig On Affected Workstation]
+
+    S --> T{Valid IPv4 Address}
+
+    T -->|No| U[Investigate DHCP Or Adapter Issue]
+    T -->|Yes| V[Check Device Manager]
+
+    V --> W{WiFi Adapter Stable}
+
+    W -->|Yes| X[Continue Network Troubleshooting]
+    W -->|No| Y[Identify WiFi Adapter Hardware Or Driver Issue]
+
+    Y --> Z[Escalate Or Replace Adapter]
+    Z --> AA[Verify Connectivity Restored]
+    AA --> AB[Resolve Incident]
+```
+
 ## Troubleshooting Steps
 
 
 1. I ask the user to verify that they are connected to corporates wifi eliminating the possibility of being connected to the wrong ssid or even having the wifi turned off in settings. 
 
-2. when i confirmed that they are connected correctly, I suggested to disconnect and reconnect as well as restart the workstation to fix any possible misconfiguration that may have been impacting the adapter.
+2. When i confirmed that they are connected correctly, I suggested to disconnect and reconnect as well as restart the workstation to fix any possible misconfiguration that may have been impacting the adapter.
 
-3. after the restart did not fix the issue i asked the user to click on the internet icon in the lower right of the screen to open the internet settings, 
+3. After the restart did not fix the issue i asked the user to click on the internet icon in the lower right of the screen to open the internet settings, 
 if so read to me if there are any errors showings in between the workstation and the internet display in the settings, user confirmed there is no error message showing. 
 
 4. I asked the user to sign into a different workstation to verify that their credentials are still active and they are able to access the internet and intranet of the company including email.
 User confirmed they are able to sign in to another workstation and they have access to everything they need. 
 
-5.I walked the customer to use the command prompt by walking them step by step to access it by click on the windows tab and in the search prompt in the bottom type "cmd" once opened,
+5. I walked the customer to use the command prompt by walking them step by step to access it by click on the windows tab and in the search prompt in the bottom type "cmd" once opened,
 I instructed the user to type "ipconfig" and read to me the IP address the machine is showing including their IPV4 address. verified that they have legitimate addresses and still no access to the internet.
 
 6. I walked them through opening up device manager by opening the control panel in the search section once they click the windows logo on the lower left. after device manager is opened, 
