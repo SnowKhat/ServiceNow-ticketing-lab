@@ -1,5 +1,5 @@
 
-## INC003 - Remote Access VPN Connection
+# INC003 - Remote Access VPN Connection
 
 
 ## Current Issue Occurring
@@ -18,13 +18,29 @@ After User identity has been confirmed I would ask probing questions to identify
 ## Troubleshooting Steps
 
 
-1.What are you trying to connect to?
+1.(Help Desk) What are you trying to connect to?
 
-2.When was the last time you were able to log into your VPN succesfully?
+User Answer- I'm trying to connect to the company VPN so I can access shared drives.
 
-3.Are you credentials the same or has it been changed by the user
+2.(Help Desk)When was the last time you were able to log into your VPN succesfully?
 
-4. are you receiving any error messages?
+User Answer-I used it successfully yesterday.
+
+3.(Help Desk) Are your credentials the same or has it been changed
+
+User Answer- My password has not been changed.
+
+4.(Help Desk)Do you know if you are the only one experiecing this issue ?
+
+User Answer-Nobody else on my team is having issues.
+
+5. (Help Desk)are you able to use the internet normally to access websites like google.
+
+User Answer-I can browse the internet normally.
+
+6.(Help Desk)Are you receiving any error messages?
+
+User Answer-Unable to resolve VPN server hostname
 
 
 
