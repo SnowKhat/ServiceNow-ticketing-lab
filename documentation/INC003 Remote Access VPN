@@ -1,1 +1,37 @@
 
+## INC003 - Remote Access VPN Connection
+
+
+## Current Issue Occurring
+
+User reports that they are not able to connect to Corporate applications using VPN
+
+User Impact & Identity Verification
+
+Verify User Identity by having user confirm Employee I.D number, Manager Approval, and any MFA they may posses
+
+After User identity has been confirmed I would ask probing questions to identify what exactly is the issue
+
+
+
+
+## Troubleshooting Steps
+
+
+1.What are you trying to connect to?
+
+2.When was the last time you were able to log into your VPN succesfully?
+
+3.Are you credentials the same or has it been changed by the user
+
+4. are you receiving any error messages?
+
+
+
+Resolution
+.
+
+Related Incidents
+None at this time
+
+Lessons Learned
