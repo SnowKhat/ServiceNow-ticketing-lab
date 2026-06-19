@@ -126,7 +126,9 @@ flowchart TD
 * Running ipconfig showed valid network addressing information, but the workstation still could not access internet or company resources.
 
 
+### Resolution
 
+![Resolution](../Screenshots/INC000001/resolution.png)
 
 ## Resolution
 
