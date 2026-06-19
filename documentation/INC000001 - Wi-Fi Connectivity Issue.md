@@ -54,6 +54,11 @@ I instructed the user to type "ipconfig" and read to me the IP address the machi
 they notice the wifi adapter seemed to be showing and then disappearing in the device manager list. User then informed me that their signal strength had been low despite having an access point near by. 
 
 
+### Troubleshooting Root Cause
+
+![Troubleshooting Root Cause](../Screenshots/INC000001/screenshot4-getting-to-root-cause.png)
+
+
 ## Troubleshooting Workflow
 
 ```mermaid
