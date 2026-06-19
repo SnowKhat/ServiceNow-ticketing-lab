@@ -10,7 +10,7 @@ User stated the connection was working normally during their previous shift.
 
 
 
-### Initial Ticket Creation
+### Ticket Creation
 
 ![Image Name](../Screenshots/INC000001/01-Incident-Creation.png)
 
@@ -18,10 +18,40 @@ User stated the connection was working normally during their previous shift.
 
 ## User Impact & Identity Verification
 
-1. before starting I would verify the users credentials by asking for their employee ID number, their managers name and date of birth with workstation ID number.  
+1. before starting I would verify the users credentials by asking for their employee ID number, their managers name and date of birth with workstation ID number.
+
+### Assignment and Work Notes
+
+![Assignment and Work Notes](../Screenshots/INC000001/screenshot2-assignment-and-work-notes.png)
+
 
 2. what is the user requesting to do and what are they unable to access, if this workstation is the only one having connectivity issues or are there others,
 after confirming no other users are experiencing issues i verified if  their workstation was working the last time they were logged in.
+
+
+### Initial Troubleshooting
+
+![Initial Troubleshooting](../Screenshots/INC000001/screenshot3-troubleshooting.png)
+
+
+## Troubleshooting Steps
+
+
+1. I ask the user to verify that they are connected to corporates wifi eliminating the possibility of being connected to the wrong ssid or even having the wifi turned off in settings. 
+
+2. When i confirmed that they are connected correctly, I suggested to disconnect and reconnect as well as restart the workstation to fix any possible misconfiguration that may have been impacting the adapter.
+
+3. After the restart did not fix the issue i asked the user to click on the internet icon in the lower right of the screen to open the internet settings, 
+if so read to me if there are any errors showings in between the workstation and the internet display in the settings, user confirmed there is no error message showing. 
+
+4. I asked the user to sign into a different workstation to verify that their credentials are still active and they are able to access the internet and intranet of the company including email.
+User confirmed they are able to sign in to another workstation and they have access to everything they need. 
+
+5. I walked the customer to use the command prompt by walking them step by step to access it by click on the windows tab and in the search prompt in the bottom type "cmd" once opened,
+I instructed the user to type "ipconfig" and read to me the IP address the machine is showing including their IPV4 address. verified that they have legitimate addresses and still no access to the internet.
+
+6. I walked them through opening up device manager by opening the control panel in the search section once they click the windows logo on the lower left. after device manager is opened, 
+they notice the wifi adapter seemed to be showing and then disappearing in the device manager list. User then informed me that their signal strength had been low despite having an access point near by. 
 
 
 ## Troubleshooting Workflow
@@ -72,24 +102,6 @@ flowchart TD
     AA --> AB[Resolve Incident]
 ```
 
-## Troubleshooting Steps
-
-
-1. I ask the user to verify that they are connected to corporates wifi eliminating the possibility of being connected to the wrong ssid or even having the wifi turned off in settings. 
-
-2. When i confirmed that they are connected correctly, I suggested to disconnect and reconnect as well as restart the workstation to fix any possible misconfiguration that may have been impacting the adapter.
-
-3. After the restart did not fix the issue i asked the user to click on the internet icon in the lower right of the screen to open the internet settings, 
-if so read to me if there are any errors showings in between the workstation and the internet display in the settings, user confirmed there is no error message showing. 
-
-4. I asked the user to sign into a different workstation to verify that their credentials are still active and they are able to access the internet and intranet of the company including email.
-User confirmed they are able to sign in to another workstation and they have access to everything they need. 
-
-5. I walked the customer to use the command prompt by walking them step by step to access it by click on the windows tab and in the search prompt in the bottom type "cmd" once opened,
-I instructed the user to type "ipconfig" and read to me the IP address the machine is showing including their IPV4 address. verified that they have legitimate addresses and still no access to the internet.
-
-6. I walked them through opening up device manager by opening the control panel in the search section once they click the windows logo on the lower left. after device manager is opened, 
-they notice the wifi adapter seemed to be showing and then disappearing in the device manager list. User then informed me that their signal strength had been low despite having an access point near by. 
 
 
 
