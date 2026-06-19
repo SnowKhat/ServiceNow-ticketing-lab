@@ -7,6 +7,15 @@ User called shortly after starting their shift and reported being unable to acce
 The issue is preventing the user from accessing required work resources and performing job duties. 
 User stated the connection was working normally during their previous shift.
 
+
+
+
+### Initial Ticket Creation
+
+![Image Name](../Screenshots/INC000001/01-Incident-Creation.png)
+
+
+
 ## User Impact & Identity Verification
 
 1. before starting I would verify the users credentials by asking for their employee ID number, their managers name and date of birth with workstation ID number.  
