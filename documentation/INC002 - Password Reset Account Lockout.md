@@ -19,6 +19,28 @@ I cannot sign into another workstation either."
 ![Ticket Creation](../Screenshots/INC000002/01-Incident-Creation.png) 
 
 
+
+## Troubleshooting Steps
+
+ 
+
+1. Ask the user if they received any notification of a password change requirement. 
+
+2. Open up Active Directory and check that the account would still be active in the user groups
+
+3. Click on their account and check if the password is still active or expired.
+
+4. I would then walk the user to click account recovery and enter a personal security pin that has been registered for that user as a company policy, User does not remember PIN
+
+
+
+### Verification and Troubleshooting
+
+![verification and troubleshooting](../Screenshots/INC000002/verification%20and%20troubleshooting%202.png)
+
+5. If the user does not remember the pin then next step is I would need to reset their password with a mandatory password change at log in. 
+
+
 ## Troubleshooting Workflow
 
 ```mermaid
@@ -55,20 +77,6 @@ flowchart TD
     V -->|Yes| W[Resolve incident]
     V -->|No| X[Investigate cached credentials or application-specific login issue]
 ```
-## Troubleshooting Steps
-
- 
-
-1. Ask the user if they received any notification of a password change requirement if no then step 2. 
-
-2. I would open up active directory and check that the account would still be active in the user groups
-
-3. Click on their account and check if the password is still active or expired.
-
-4. I would then walk the user to click account recovery and enter a personal security pin that has been registered for that user as a company policy, User does not remember PIN
-
-5. If the user does not remember the pin then next step is I would need to reset their password with a mandatory password change at log in. 
-
 
 
 ## Solutions That Did Not Work
