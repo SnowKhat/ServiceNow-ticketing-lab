@@ -14,7 +14,9 @@ Is it for their enterprise log in or perhaps a specific application log in witho
 ** User explains that they are locked out of their Windows login. "I tried my password several times this morning and now it says my account is locked. 
 I cannot sign into another workstation either."
 
+### Ticket Creation
 
+![Ticket Creation](../Screenshots/INC000002/01-Incident-Creation.png) 
 
 
 ## Troubleshooting Workflow
