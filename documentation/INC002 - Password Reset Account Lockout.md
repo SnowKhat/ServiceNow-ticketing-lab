@@ -90,10 +90,16 @@ flowchart TD
 
 
 
-## Resolution
+### Resolution
+
+![resolution](../Screenshots/INC000002/Resolution3.png)
 
 User is unable to recover account from password lock out after multiple failed attempts. I reset their Windows Log in password with a mandatory password change at log in. 
 User was able to enter their system and use all applications that used the same credentials with out issue.
+
+
+
+
 
 ## Related Incidents
 
