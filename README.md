@@ -31,7 +31,7 @@ This lab will include simulated tickets for:
 
 1. Password reset / account lockout- | [INC000002 - Password Reset Account Lockout](documentation/INC002%20-%20Password%20Reset%20Account%20Lockout.md) 
 2. Wi-Fi connectivity issue -[INC000001 - Wi-Fi Connectivity Issue](./documentation/INC000001%20-%20Wi-Fi%20Connectivity%20Issue.md)   
-3. Microsoft 365 Login Issue - Planned
+3. Remote Access VPN
 4. Printer Not Responding - Planned
 5. Workstation Will Not Boot - Planned
 6. New Employee Account Provisioning - Planned
