@@ -1,5 +1,4 @@
-
-# INC003 - Remote Access VPN Connection
+### INC003 - Remote Access VPN Connection
 
 
 ### Current Issue Occurring
