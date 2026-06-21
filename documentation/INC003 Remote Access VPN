@@ -44,41 +44,33 @@ Verify User Identity by having user confirm
 
 ## workflow
 
+## Workflow
+
 ```mermaid
 flowchart TD
+    A["User reports VPN connectivity issue"] --> B["Verify user identity"]
+    B --> C["Confirm user impact"]
+    C --> D["Ask what resource user is trying to access"]
+    D --> E{"VPN worked previously?"}
+    E -->|Yes| F["Check credential status"]
+    E -->|No| K["Document findings"]
 
-A["User Reports VPN Issue"] --> B["Verify User Identity"]
+    F --> G{"Credentials changed recently?"}
+    G -->|Yes| K
+    G -->|No| H["Verify internet connectivity"]
 
-B --> C{"VPN Worked Previously?"}
+    H --> I{"Internet working?"}
+    I -->|No| K
+    I -->|Yes| J["Check error message and MFA prompt"]
 
-C -->|Yes| D["Check Credential Status"]
-C -->|No| K["Document Findings"]
+    J --> L{"MFA prompt received?"}
+    L -->|Yes| M["Test access to other apps with same credentials"]
+    L -->|No| K
 
-D --> E{"Credentials Changed?"}
-
-E -->|Yes| K
-E -->|No| F["Verify Internet Connectivity"]
-
-F --> G{"Internet Working?"}
-
-G -->|No| K
-G -->|Yes| H["Review Error Messages"]
-
-H --> I{"Receiving MFA Prompt?"}
-
-I -->|Yes| J["Test Other Applications Using Same Credentials"]
-I -->|No| K
-
-J --> L{"Other Applications Accessible?"}
-
-L -->|Yes| K
-L -->|No| K
-
-K --> M["Document Findings in ServiceNow"]
-M --> N["Escalate to Tier 2"]
-N --> O["Tier 1 Investigation Complete"]
+    M --> K["Document findings in ServiceNow"]
+    K --> N["Escalate to Tier 2 VPN support"]
+    N --> O["Tier 1 investigation complete"]
 ```
-
 
 ###Resolution
 
