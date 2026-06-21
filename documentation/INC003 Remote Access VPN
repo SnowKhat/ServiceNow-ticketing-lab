@@ -42,13 +42,28 @@ Verify User Identity by having user confirm Employee I.D number, Manager Approva
 
 
 
+###Resolution
+
+1.Ticket will be escalated to tier 2 technician in order to investigate VPN further and find a solution, Unable to identify cause of VPN connection issue. 
+
+**What has been confirmed**
+
+Identity verified.
+User reports VPN connectivity failure.
+Internet connectivity confirmed.
+User able to access external websites.
+VPN was functioning previously on last log in (yesterday).
+No recent credential changes reported.
+User not receiving MFA prompt during login attempt.
+Issue appears isolated to a single user.
 
 
-
-
-Resolution
 
 Related Incidents
+
+
 None at this time
 
-Lessons Learned
+##Lessons Learned
+
+One person can not solve every issue, communication is key to get the right level of help to solve the problem.
