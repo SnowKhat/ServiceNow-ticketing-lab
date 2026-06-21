@@ -42,44 +42,40 @@ Verify User Identity by having user confirm
 
 8. Is the User able to log into any other application that uses those same credentials?
 
-##workflow
-
+## workflow
 ```mermaid
 flowchart TD
 
-A[User Reports VPN Connectivity Issue]
+A["User Reports VPN Issue"] --> B["Verify User Identity"]
 
-A --> B[Verify User Identity]
-B --> C[What Resource Is User Trying To Access?]
+B --> C{"VPN Worked Previously?"}
 
-C --> D{VPN Worked Previously?}
+C -->|Yes| D["Check Credential Status"]
+C -->|No| K["Document Findings"]
 
-D -->|Yes| E[Verify Credentials]
-D -->|No| L[Document Findings]
+D --> E{"Credentials Changed?"}
 
-E --> F{Credentials Recently Changed?}
+E -->|Yes| K
+E -->|No| F["Verify Internet Connectivity"]
 
-F -->|Yes| L
-F -->|No| G[Verify Internet Connectivity]
+F --> G{"Internet Working?"}
 
-G --> H{Internet Working?}
+G -->|No| K
+G -->|Yes| H["Review Error Messages"]
 
-H -->|No| L
-H -->|Yes| I[Review Error Messages]
+H --> I{"Receiving MFA Prompt?"}
 
-I --> J{Receiving MFA Prompt?}
+I -->|Yes| J["Test Other Applications Using Same Credentials"]
+I -->|No| K
 
-J -->|Yes| K[Verify Access To Other Applications Using Same Credentials]
-J -->|No| L
+J --> L{"Other Applications Accessible?"}
 
-K --> M{Can User Access Other Applications?}
+L -->|Yes| K
+L -->|No| K
 
-M -->|Yes| L
-M -->|No| L
-
-L --> N[Document Findings In ServiceNow]
-N --> O[Escalate To Tier 2 VPN Support]
-O --> P[Tier 1 Investigation Complete]
+K --> M["Document Findings in ServiceNow"]
+M --> N["Escalate to Tier 2"]
+N --> O["Tier 1 Investigation Complete"]
 ```
 
 
@@ -89,14 +85,14 @@ O --> P[Tier 1 Investigation Complete]
 
 **What has been confirmed**
 
-Identity verified.
-User reports VPN connectivity failure.
-Internet connectivity confirmed.
-User able to access external websites.
-VPN was functioning previously on last log in (yesterday).
-No recent credential changes reported.
-User not receiving MFA prompt during login attempt.
-Issue appears isolated to a single user.
+1.Identity verified.
+2.User reports VPN connectivity failure.
+3.Internet connectivity confirmed.
+4.User able to access external websites.
+5.VPN was functioning previously on last log in (yesterday).
+6.No recent credential changes reported.
+7.User not receiving MFA prompt during login attempt.
+8.Issue appears isolated to a single user.
 
 
 
