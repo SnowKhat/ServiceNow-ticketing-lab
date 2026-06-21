@@ -8,12 +8,15 @@ User reports that they are not able to connect to Corporate applications using V
 
 ### User Impact
 
-User reports that they are trying to log into their workstation from home via remote VPN but is not able to log in. They need to access their E-mial and 
-send out confidential files that is time sensitive.
+User reports that they are trying to log into their workstation from home via remote VPN but is not able to log in. 
+User stated they need to access their E-mail to send out confidential files that is time sensitive.
 
 ### Identity Verification
 
-Verify User Identity by having user confirm Employee I.D number, Manager Approval, and any MFA they may posses
+Verify User Identity by having user confirm
+1.Employee I.D number,
+2.Manager Approval, 
+3.MFA Security questions.
 
 
 
@@ -39,7 +42,45 @@ Verify User Identity by having user confirm Employee I.D number, Manager Approva
 
 8. Is the User able to log into any other application that uses those same credentials?
 
+##workflow
 
+```mermaid
+flowchart TD
+
+A[User Reports VPN Connectivity Issue]
+
+A --> B[Verify User Identity]
+B --> C[What Resource Is User Trying To Access?]
+
+C --> D{VPN Worked Previously?}
+
+D -->|Yes| E[Verify Credentials]
+D -->|No| L[Document Findings]
+
+E --> F{Credentials Recently Changed?}
+
+F -->|Yes| L
+F -->|No| G[Verify Internet Connectivity]
+
+G --> H{Internet Working?}
+
+H -->|No| L
+H -->|Yes| I[Review Error Messages]
+
+I --> J{Receiving MFA Prompt?}
+
+J -->|Yes| K[Verify Access To Other Applications Using Same Credentials]
+J -->|No| L
+
+K --> M{Can User Access Other Applications?}
+
+M -->|Yes| L
+M -->|No| L
+
+L --> N[Document Findings In ServiceNow]
+N --> O[Escalate To Tier 2 VPN Support]
+O --> P[Tier 1 Investigation Complete]
+```
 
 
 ###Resolution
