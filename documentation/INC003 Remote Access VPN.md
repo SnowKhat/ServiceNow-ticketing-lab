@@ -20,6 +20,9 @@ Verify User Identity by having user confirm
 
 3.MFA Security questions.
 
+### Ticket Creation
+
+![Ticket Creation](../Screenshots/INC000003/Incident-Creation.png) 
 
 
 
@@ -44,7 +47,7 @@ Verify User Identity by having user confirm
 
 8. Is the User able to log into any other application that uses those same credentials?
 
-
+![Ticket Creation](../Screenshots/INC000003/trouble-shooting.png) 
 
 ## Workflow
 
@@ -74,28 +77,37 @@ flowchart TD
     N --> O["Tier 1 investigation complete"]
 ```
 
-###Resolution
+## Resolution
 
 1.Ticket will be escalated to tier 2 technician in order to investigate VPN further and find a solution, Unable to identify cause of VPN connection issue. 
+
+![Ticket Creation](../Screenshots/INC000003/no-resolution.png)
 
 **What has been confirmed**
 
 1.Identity verified.
+
 2.User reports VPN connectivity failure.
+
 3.Internet connectivity confirmed.
+
 4.User able to access external websites.
+
 5.VPN was functioning previously on last log in (yesterday).
+
 6.No recent credential changes reported.
+
 7.User not receiving MFA prompt during login attempt.
+
 8.Issue appears isolated to a single user.
 
 
 
-Related Incidents
+## Related Incidents
 
 
 None at this time
 
-##Lessons Learned
+## Lessons Learned
 
 One person can not solve every issue, communication is key to get the right level of help to solve the problem.
