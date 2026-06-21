@@ -13,8 +13,11 @@ User stated they need to access their E-mail to send out confidential files that
 ### Identity Verification
 
 Verify User Identity by having user confirm
-1.Employee I.D number,
-2.Manager Approval, 
+
+1.Employee I.D number
+
+2.Manager Approval
+
 3.MFA Security questions.
 
 
