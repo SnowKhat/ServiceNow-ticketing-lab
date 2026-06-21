@@ -2,15 +2,20 @@
 # INC003 - Remote Access VPN Connection
 
 
-## Current Issue Occurring
+### Current Issue Occurring
 
 User reports that they are not able to connect to Corporate applications using VPN
 
-User Impact & Identity Verification
+### User Impact
+
+User reports that they are trying to log into their workstation from home via remote VPN but is not able to log in. They need to access their E-mial and 
+send out confidential files that is time sensitive.
+
+### Identity Verification
 
 Verify User Identity by having user confirm Employee I.D number, Manager Approval, and any MFA they may posses
 
-After User identity has been confirmed I would ask probing questions to identify what exactly is the issue
+
 
 
 
@@ -18,34 +23,30 @@ After User identity has been confirmed I would ask probing questions to identify
 ## Troubleshooting Steps
 
 
-1.(Help Desk) What are you trying to connect to?
+1. What are you trying to connect to?
 
-User Answer- I'm trying to connect to the company VPN so I can access shared drives.
+2. When was the last time you were able to log into your VPN succesfully?
 
-2.(Help Desk)When was the last time you were able to log into your VPN succesfully?
+3. Are your credentials the same or has it been changed or did you receive any notification to change them.
 
-User Answer-I used it successfully yesterday.
+4. Do you know if you are the only one experiecing this issue ?
 
-3.(Help Desk) Are your credentials the same or has it been changed
+5. Are you able to use the internet normally to access websites like google.
 
-User Answer- My password has not been changed.
+6. Are you receiving any error messages?
 
-4.(Help Desk)Do you know if you are the only one experiecing this issue ?
+7. Do you have MFA, what type and are you receiving the notification to log in through it.
 
-User Answer-Nobody else on my team is having issues.
+8. Is the User able to log into any other application that uses those same credentials?
 
-5. (Help Desk)are you able to use the internet normally to access websites like google.
 
-User Answer-I can browse the internet normally.
 
-6.(Help Desk)Are you receiving any error messages?
 
-User Answer-Unable to resolve VPN server hostname
+
 
 
 
 Resolution
-.
 
 Related Incidents
 None at this time
